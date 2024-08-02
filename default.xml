@@ -22,15 +22,7 @@
   <contactinfo bugurl="go/repo-bug" />
 
   <!-- AOSP Projects -->
-
-  <project path="build/make" name="LineageOS/android_build" groups="pdk,sysui-studio" >
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
+  
   <project path="build/orchestrator" name="platform/build/orchestrator" groups="pdk" remote="aosp" />
   <project path="build/bazel" name="platform/build/bazel" groups="pdk" remote="aosp" >
     <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
@@ -1337,4 +1329,9 @@
 
   <include name="snippets/lineage.xml" />
   <include name="snippets/pixel.xml" />
+
+  <!-- Lineage Fork -->
+  <include name="snippets/remove.xml" />
+  <include name="snippets/fork-edition.xml" />
+
 </manifest>
