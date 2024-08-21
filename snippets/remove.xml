@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Frameworks repos -->
+  <remove-project name="LineageOS/android_frameworks_base" />
+
+  <!-- General repos -->
+  <remove-project name="LineageOS/android_bionic" />
+  <remove-project name="LineageOS/android_system_core" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+
+  <!-- Package/apps repos -->
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_packages_apps_Backgrounds" />
+  <remove-project name="LineageOS/android_packages_apps_Updater" />
+
+</manifest>
